@@ -5,7 +5,7 @@ build:
 	go build -o bin/$(APPNAME)
 
 .phony: build_release
-build_release: build build_test
+build_release: test build build_test
 
 .phony: test
 test:
